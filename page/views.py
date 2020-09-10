@@ -6,3 +6,17 @@ def home(request):
 
 def community(request):
     return render(request, 'community.html')
+
+# mypages -------------------------------
+def mypage(request):
+    return render(request, 'mypage.html')
+
+def profile(request):
+    return render(request, 'profile.html')
+
+def wish(request):
+    return render(request, 'wish.html')
+
+def record(request):
+    return render(request, 'record.html')
+# ------------------------------- mypages 

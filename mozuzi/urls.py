@@ -20,5 +20,9 @@ from page.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
-    path('community', community, name='community')
+    path('community', community, name='community'),
+    path('mypage/', mypage, name='mypage'),
+    path('mypage/profile/', profile, name='profile'),
+    path('mypage/record/', record, name='record'),
+    path('mypage/wish/', wish, name='wish'),
 ]
