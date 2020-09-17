@@ -6,3 +6,6 @@ def home(request):
 
 def community(request):
     return render(request, 'community.html')
+
+def story(request):
+    return render(request, 'story.html')

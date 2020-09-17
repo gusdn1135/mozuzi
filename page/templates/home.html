@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+{% block content %}}
+        <!-- section1: quiz -->
+        <section class="jumbotron text-center" style="background-color: #FBD6D5;">
+            <div class="container" style="padding: 10%;">
+                <h2 class="text-white">그 사람을 위한 마음을 담은 선물,<br>
+                    같이 골라볼까요?
+                </h2>
+                <br>
+                <a href="#" class="btn btn-light btn-lg my-2 bg-danger text-white">선물 추천 받기</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- section2: album -->
+        <div class="album py-5" style="border:1px solid #FF8F8F; margin:1%">
+            <div class="container">
+                <h3 style="color:#F47F7C; font-weight: bold; margin-bottom:0px;">곧 있을 발렌타인데이,</h3>
+                <h3 style="color:#F47F7C;">선물 준비 하셨나요?</h3>
+                <br><br>
+                <div class="row">
+                    <!-- card #1 -->
+                    <div class="col-md-4" style="padding:1%; background-color:#FDEFF7;">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><img src = "{% static 'image/gift.png/' %}" alt="gift.png" />
+                            </svg>
+                            <div class="card-body">
+                                <h5>flowerbox</h5>
+                                <p class="card-text">향긋하고 아름다운 꽃 다발다발</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card #2 -->
+                    <div class="col-md-4" style="padding:1%; background-color:#FDEFF7;">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5>flowerbox</h5>
+                                <p class="card-text">향긋하고 아름다운 꽃 다발다발</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card #3 -->
+                    <div class="col-md-4" style="padding:1%; background-color:#FDEFF7;">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5>flowerbox</h5>
+                                <p class="card-text">향긋하고 아름다운 꽃 다발다발</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section3: introduce -->
+        <section class="jumbotron text-center" style="background-color: white;">
+            <div class="container" style="padding: 10%;">
+                <h3 style="color:#F47F7C; font-weight: bold;">선물 고르기가 제일 어려운 당신<br>이제 고민하지 마세요!</h3>
+                <br>
+                <p>간단한 설문조사를 통해<br>
+                    상황에 딱 맞는 선물을 추천해 드려요
+                </p>
+            </div>
+        </section>
+ 
+    
+        {% endblock %}
