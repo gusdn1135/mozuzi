@@ -7,7 +7,9 @@ def home(request):
 def community(request):
     return render(request, 'community.html')
 
-# mypages -------------------------------
+def story(request):
+    return render(request, 'story.html')
+
 def mypage(request):
     return render(request, 'mypage.html')
 
@@ -19,4 +21,4 @@ def wish(request):
 
 def record(request):
     return render(request, 'record.html')
-# ------------------------------- mypages 
+

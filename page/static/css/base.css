@@ -1,0 +1,10 @@
+.navbar  li a:hover {
+    color:rgb(244, 127, 124);
+}
+
+.navbar li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
