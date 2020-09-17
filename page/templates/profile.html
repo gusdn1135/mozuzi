@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내프로필</title>
+    <!-- CSS static -->
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+</head>
+
+<body>
+    <div class="mypage-container">
+        <div class=navbar-container>
+            <a href="{% url 'mypage'%}"><button class="nav-button">마이페이지</button></a>
+            <a href="{% url 'profile' %}"><button class="nav-title" style="color:#F47F7C;">내프로필</button></a>
+            <a href="{% url 'wish' %}"><button class="nav-button">찜목록</button></a>
+            <a href="{% url 'record' %}"><button class="nav-button">지난설문</button></a>
+        </div>
+    
+        <div class="content-container">
+            <div class="title">내프로필</div>
+            <div class="content">
+                
+                <hr color="#FBD6D5">
+                
+                <div class="horizontal-content">
+                    <div class="photo-container">
+                        <div class="photo-frame"></div>
+                        <a href="#"><button class="edit-button">편집하기</button></a>
+                    </div>
+
+                    <div class="info-container">
+                        <span style="line-height: 220%;">
+                            <span style="color:#F47F7C; font-weight: 600;">이름</span> 
+                            모주지<br>
+                        </span>
+                        <span style="line-height: 220%;">
+                            <span style="color:#F47F7C; font-weight: 600;">생년월일</span>
+                            20/00/00<br>
+                        </span>
+                        <span style="line-height: 220%;">
+                            <span style="color:#F47F7C; font-weight: 600;">연락처</span>
+                            010-0000-0000<br>
+                        </span>
+                        <span style="line-height: 220%;">
+                            <span style="color:#F47F7C; font-weight: 600;">이메일</span>
+                            mozuzi@likelion.org
+                        </span>
+                    </div>
+                </div>
+
+            </div> 
+
+        </div>
+    </div>
+</body>
+</html>

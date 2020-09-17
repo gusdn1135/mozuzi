@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>찜목록</title>
+    <!-- CSS static -->
+    <link rel="stylesheet" href="{% static 'css/wish.css' %}">
+</head>
+
+<body>
+    <div class="mypage-container">
+        <div class=navbar-container>
+            <a href="{% url 'mypage'%}"><button class="nav-button">마이페이지</button></a>
+            <a href="{% url 'profile' %}"><button class="nav-button">내프로필</button></a>
+            <a href="{% url 'wish' %}"><button class="nav-title" style="color:#F47F7C;">찜목록</button></a>
+            <a href="{% url 'record' %}"><button class="nav-button">지난설문</button></a>
+        </div>
+
+        <div class="content-container">
+            <div class="title">찜목록</div>
+            <div class="content">
+                <hr color="#FBD6D5">
+
+                <small style="color:#F47F7C">
+                    체크박스를 통해 선물을 선택하고<br>
+                    물어보기 기능을 통해 받으실 분에게 직접 물어볼 수 있어요!
+                </small>
+
+                <div class="wishlist-container">
+                    <div class="wishitem-container">
+                        <div class="wishitem-photo">
+
+                            <!--사진이 들어갈 부분-->
+
+                            <!--버튼 자바스크립트로 수정하기-->
+                            <div style="width: 250px; text-align: right;">
+                                <a href=""><button class="like-button">🤍</button></a>
+                            </div>
+
+                        </div>
+                        <div class="wishitem-description">
+                            <!--이름-->
+                            <span style="font-size: 20px; line-height: 150%;">GIFT<br></span>
+                            <!--설명-->
+                            <small style="line-height: 240%">설명이 들어갈 부분입니다<br></small>
+                            <!--가격-->
+                            <small style="color: #F47F7C;">1000원</small>
+                        </div>
+                    </div>
+
+                    <div class="wishitem-container">
+                        <div class="wishitem-photo">
+
+                            <!--사진이 들어갈 부분-->
+
+                            <!--버튼 자바스크립트로 수정하기-->
+                            <div style="width: 250px; text-align: right;">
+                                <a href=""><button class="like-button">🤍</button></a>
+                            </div>
+
+                        </div>
+                        <div class="wishitem-description">
+                            <!--이름-->
+                            <span style="font-size: 20px; line-height: 150%;">GIFT<br></span>
+                            <!--설명-->
+                            <small style="line-height: 240%">설명이 들어갈 부분입니다<br></small>
+                            <!--가격-->
+                            <small style="color: #F47F7C;">1000원</small>
+                        </div>
+                    </div>
+
+                    <div class="wishitem-container">
+                        <div class="wishitem-photo">
+
+                            <!--사진이 들어갈 부분-->
+
+                            <!--버튼 자바스크립트로 수정하기-->
+                            <div style="width: 250px; text-align: right;">
+                                <a href=""><button class="like-button">🤍</button></a>
+                            </div>
+
+                        </div>
+                        <div class="wishitem-description">
+                            <!--이름-->
+                            <span style="font-size: 20px; line-height: 150%;">GIFT<br></span>
+                            <!--설명-->
+                            <small style="line-height: 240%">설명이 들어갈 부분입니다<br></small>
+                            <!--가격-->
+                            <small style="color: #F47F7C;">1000원</small>
+                        </div>
+                    </div>
+
+                    <div class="wishitem-container">
+                        <div class="wishitem-photo">
+
+                            <!--사진이 들어갈 부분-->
+
+                            <!--버튼 자바스크립트로 수정하기-->
+                            <div style="width: 250px; text-align: right;">
+                                <a href=""><button class="like-button">🤍</button></a>
+                            </div>
+
+                        </div>
+                        <div class="wishitem-description">
+                            <!--이름-->
+                            <span style="font-size: 20px; line-height: 150%;">GIFT<br></span>
+                            <!--설명-->
+                            <small style="line-height: 240%">설명이 들어갈 부분입니다<br></small>
+                            <!--가격-->
+                            <small style="color: #F47F7C;">1000원</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

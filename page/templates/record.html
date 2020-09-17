@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지난설문</title>
+    <!-- CSS static -->
+    <link rel="stylesheet" href="{% static 'css/record.css' %}">
+</head>
+
+<body>
+    <div class="mypage-container">
+        <div class=navbar-container>
+            <a href="{% url 'mypage'%}"><button class="nav-button">마이페이지</button></a>
+            <a href="{% url 'profile' %}"><button class="nav-button">내프로필</button></a>
+            <a href="{% url 'wish' %}"><button class="nav-button">찜목록</button></a>
+            <a href="{% url 'record' %}"><button class="nav-title" style="color:#F47F7C;">지난설문</button></a>
+        </div>
+    
+        <div class="content-container">
+            <div class="title">지난설문</div>
+            <div class="content">
+                <hr color="#FBD6D5">
+                <span style="line-height: 200%;"><br></span>
+                
+                <!--버튼-->
+                <a href="" style="text-decoration: none; color:#3B3838"><div class="record-button">
+                    <small>2020/00/00</small>
+                    <span style="line-height: 180%;"><br></span>
+                    모주지
+                </div></a>
+
+                <!--버튼-->
+                <a href="" style="text-decoration: none; color:#3B3838"><div class="record-button">
+                    <small>2020/00/00</small>
+                    <span style="line-height: 180%;"><br></span>
+                    모주지
+                </div></a>
+
+            </div> 
+
+        </div>
+    </div>
+</body>
+</html>
