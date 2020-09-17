@@ -1,0 +1,155 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* card#1 */
+.card1-container{
+    display: flex;
+    background-color: #FBD6D5;  
+    justify-content: center;
+}
+
+.card1-container .card1-content{
+    margin-top: 180px;
+    margin-bottom: 180px;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.go-button{
+    align-items: center;
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 20px; padding-bottom: 20px;
+    padding-left: 36px; padding-right: 36px;
+    border: 0;
+    outline: 0;
+    border-radius: 174.5px;
+    background-color: #F47F7C;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* card#2 */
+.card2-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 32px; margin-bottom: 32px;
+    margin-left: 12px; margin-right: 12px;
+    border: 2px solid #F47F7C;
+}
+
+.card2-container .card2-content{
+    margin: 3rem;
+    font-size: 24px;
+    color: #F47F7C;
+}
+
+.card2-container .card2-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 48px; margin-right: 48px; margin-bottom: 48px;
+    height: 400px;
+    /*background-color: mintcream;*/
+}
+
+.card2-container .card2-image-container .card2-image-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FDEFF7;
+    width: 400px; height: 400px;
+}
+
+.card2-image-content .card2-image-content-photo{
+    margin-top: 25px;
+    background-color: lightgrey;
+    width: 350px; height: 290px;
+}
+
+.card2-container a{
+    text-align: right;
+    margin-right: 48px; margin-bottom: 48px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #F47F7C;
+}
+
+/* card#3 */
+.card3-container{
+    display: flex;
+    background-color: white;  
+    justify-content: center;
+}
+
+.card3-container .card3-content{
+    margin-top: 80px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.card3-container .card3-content .card3-content-title{
+    color: #F47F7C;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.card3-container .card3-content .card3-content-icon{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    color: rgb(65, 65, 65);
+}
+
+.card3-container .card3-content .card3-content-description{
+    color: #3B3838;
+    font-size: 20px;
+}
+
+/* card#4 */
+.card4-container{
+    display: flex;
+    background-color: #FBD6D5;  
+    justify-content: center;
+}
+
+.card4-container .card4-content{
+    margin-top: 120px;
+    margin-bottom: 100px;
+    color: #3B3838;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* card#5 */
+.card5-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px; margin-bottom: 32px;
+    margin-left: 12px; margin-right: 12px;
+    border: 2px solid #F47F7C;
+}
+
+.card5-container .card5-content-title{
+    margin-top: 10px;
+    margin-bottom: 80px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card5-container .card5-content{
+    margin-bottom: 80px;
+    text-align: left;
+    font-size:20px;
+    color: #3B3838;
+}

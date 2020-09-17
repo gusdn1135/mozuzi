@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <!-- CSS static -->
+    <link rel="stylesheet" href="{% static 'css/mypage.css' %}">
+</head>
+
+<body>
+    <div class="mypage-container">
+        <div class=navbar-container>
+            <a href="{% url 'mypage'%}" ><button class="nav-title" style="color:#F47F7C;">마이페이지</button></a>
+            <a href="{% url 'profile' %}"><button class="nav-button">내프로필</button></a>
+            <a href="{% url 'wish' %}"><button class="nav-button">찜목록</button></a>
+            <a href="{% url 'record' %}"><button class="nav-button">지난설문</button></a>
+        </div>
+    
+        <div class="content-container">
+            <div class="title">마이페이지</div>
+            <div class="content">
+                <hr color="#FBD6D5">
+                <br><span style="font-size: 20px;">모주지님 안녕하세요!</span><br>
+                <small>mozuzi@likelion.org</small>
+                <br><br>
+                
+                <div>
+                    <a href="{% url 'profile' %}"><button class="content-button">내 프로필 보러가기&nbsp;&nbsp;&nbsp;💨</button></a>
+                    <br>
+                    <a href="{% url 'wish' %}"><button class="content-button">찜목록 보러가기&nbsp;&nbsp;&nbsp;💨</button></a>
+                    <br>
+                    <a href="{% url 'record' %}"><button class="content-button">지난설문 보러가기&nbsp;&nbsp;&nbsp;💨</button></a>
+                </div>
+
+            </div> 
+
+        </div>
+    </div>
+</body>
+</html>
