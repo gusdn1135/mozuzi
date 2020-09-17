@@ -20,10 +20,10 @@ from page import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('story/', views.story, name='story'),
-    path('', home, name='home'),
-    path('community', community, name='community'),
-    path('mypage/', mypage, name='mypage'),
-    path('mypage/profile/', profile, name='profile'),
-    path('mypage/record/', record, name='record'),
-    path('mypage/wish/', wish, name='wish'),
+    path('', views.home, name='home'),
+    path('community', views.community, name='community'),
+    path('mypage/', views.mypage, name='mypage'),
+    path('mypage/profile/', views.profile, name='profile'),
+    path('mypage/record/', views.record, name='record'),
+    path('mypage/wish/', views.wish, name='wish'),
 ]
