@@ -7,7 +7,7 @@ def home(request):
 
 def community(request):
     notices = Notice.objects.all()
-    return render(request, 'community.html')
+    return render(request, 'community.html', {'notices': notices})    
 
 def story(request):
     return render(request, 'story.html')
@@ -23,3 +23,7 @@ def wish(request):
 
 def record(request):
     return render(request, 'record.html')
+
+def question(request):
+    return render(request, 'question.html')
+

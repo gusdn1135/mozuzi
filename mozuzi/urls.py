@@ -26,4 +26,5 @@ urlpatterns = [
     path('mypage/profile/', views.profile, name='profile'),
     path('mypage/record/', views.record, name='record'),
     path('mypage/wish/', views.wish, name='wish'),
+    path('community/question', views.question, name='question'),
 ]
