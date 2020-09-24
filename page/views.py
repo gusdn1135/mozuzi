@@ -31,4 +31,5 @@ def question(request):
 def survey(request):
     return HttpResponse("Hello, world. You're at the polls index.")
     
-
+def login(request):
+    return render(request, 'login.html')
