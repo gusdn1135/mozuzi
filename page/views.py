@@ -1,11 +1,13 @@
 from django.shortcuts import render
+from .models import Notice
 
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
 
 def community(request):
-    return render(request, 'community.html')
+    notices = Notice.objects.all()
+    return render(request, 'community.html', {'notices': notices})    
 
 def story(request):
     return render(request, 'story.html')
@@ -21,4 +23,7 @@ def wish(request):
 
 def record(request):
     return render(request, 'record.html')
+
+def question(request):
+    return render(request, 'question.html')
 
