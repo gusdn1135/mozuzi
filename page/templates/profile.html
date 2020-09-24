@@ -30,7 +30,7 @@
                 
                 <div class="horizontal-content">
                     <div class="photo-container">
-                        <div class="photo-frame"></div>
+                        <div class="photo-frame"><img class="photo" src="{{social_info.profile.profile_image_url}}" alt="profile"></div>
                         <a href="#"><button class="edit-button">편집하기</button></a>
                     </div>
 
@@ -41,11 +41,11 @@
                         </span>
                         <span style="line-height: 220%;">
                             <span style="color:#F47F7C; font-weight: 600;">생년월일</span>
-                            20/00/00<br>
+                            {{social_info.birthday}}<br>
                         </span>
                         <span style="line-height: 220%;">
                             <span style="color:#F47F7C; font-weight: 600;">연락처</span>
-                            010-0000-0000<br>
+                            알수없음<br>
                         </span>
                         <span style="line-height: 220%;">
                             <span style="color:#F47F7C; font-weight: 600;">이메일</span>
