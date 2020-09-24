@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from page import views
 
 urlpatterns = [
@@ -27,4 +27,13 @@ urlpatterns = [
     path('mypage/record/', views.record, name='record'),
     path('mypage/wish/', views.wish, name='wish'),
     path('community/question', views.question, name='question'),
+    path('login/', views.login, name='login'),
+    
+    # login ------------------------------
+
+        # allauth 라이브러리에 소셜 로그인에 대한 urls.py가 이미 정의되어 있으므로
+        # 로그인 시도 요청 시 allauth의 urls.py로 이동할 수 있게 한다
+    path('accounts/', include('allauth.urls')),
+    
+    # ------------------------------ login
 ]

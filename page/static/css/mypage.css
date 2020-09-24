@@ -11,6 +11,8 @@ html, body{
 /* navbar */
 .mypage-container{
     display: flex;
+    margin-top: 60px;
+
 }
 
 /* navbar */
