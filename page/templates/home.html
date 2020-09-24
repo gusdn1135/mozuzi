@@ -22,6 +22,11 @@
             그 사람을 위한 마음을 담은 선물,<br>
             같이 골라볼까요?<br>
 
+            <!--login test-->
+            {% if user.is_authenticated%}
+            테스트: {{user.username}} 로그인함<br>
+            {% endif %}
+
             <button class="go-button">선물 추천 받기</button>
         </div>
     </div>
