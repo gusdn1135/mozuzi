@@ -1,4 +1,7 @@
+{% extends 'base.html' %}
 {% load static %}
+
+{% block content %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +37,7 @@
                     <div class="info-container">
                         <span style="line-height: 220%;">
                             <span style="color:#F47F7C; font-weight: 600;">이름</span> 
-                            모주지<br>
+                            {{user.username}}<br>
                         </span>
                         <span style="line-height: 220%;">
                             <span style="color:#F47F7C; font-weight: 600;">생년월일</span>
@@ -46,7 +49,7 @@
                         </span>
                         <span style="line-height: 220%;">
                             <span style="color:#F47F7C; font-weight: 600;">이메일</span>
-                            mozuzi@likelion.org
+                            {{user.email}}
                         </span>
                     </div>
                 </div>
@@ -57,3 +60,4 @@
     </div>
 </body>
 </html>
+{% endblock %}

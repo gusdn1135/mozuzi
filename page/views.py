@@ -23,3 +23,10 @@ def wish(request):
 
 def record(request):
     return render(request, 'record.html')
+
+def question(request):
+    return render(request, 'question.html')
+
+def login(request):
+    return render(request, 'login.html')
+
