@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Notice
+from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
@@ -26,4 +27,8 @@ def record(request):
 
 def question(request):
     return render(request, 'question.html')
+
+def survey(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
+    
 
