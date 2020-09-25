@@ -27,6 +27,7 @@ urlpatterns = [
     path('mypage/record/', views.record, name='record'),
     path('mypage/wish/', views.wish, name='wish'),
     path('community/question', views.question, name='question'),
+    path('survey', views.survey, name='survey'),
     path('login/', views.login, name='login'),
     
     # login ------------------------------
@@ -36,4 +37,3 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     
     # ------------------------------ login
-]
