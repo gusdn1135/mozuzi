@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Notice
+from allauth.socialaccount.models import SocialAccount
 from django.http import HttpResponse
 
 # Create your views here.
@@ -17,7 +18,9 @@ def mypage(request):
     return render(request, 'mypage.html')
 
 def profile(request):
-    return render(request, 'profile.html')
+    # birthday 및 프로필 사진 가져오기 위해
+    social_info = SocialAccount.objects.filter(user=request.user)[0].extra_data['kakao_account']
+    return render(request, 'profile.html', {'social_info':social_info})
 
 def wish(request):
     return render(request, 'wish.html')
